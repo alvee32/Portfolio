@@ -1,7 +1,11 @@
 
 <!doctype html>
 <html lang="en">
+
   <head>
+
+    {% load static %}
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -53,10 +57,9 @@
        </button>
        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
          <div class="navbar-nav ml-auto">
-           <a class="nav-item nav-link" href="#">Github</a>
-           <a class="nav-item nav-link" href="#">Resume</a>
+           <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
            <a class="nav-item nav-link" href="#">Blog</a>
-           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+           <a class="nav-item nav-link" href="#">Contact Me</a>
          </div>
        </div>
      </nav>
@@ -71,6 +74,7 @@
       <p>
         <a href="mailto:alvmz32@gmail.com" class="btn btn-primary my-2">Contact Me</a>
       </p>
+       <img src="{% static 'photo.jpg' %}" height="300" />
     </div>
   </section>
 
